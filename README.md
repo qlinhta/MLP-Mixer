@@ -1,8 +1,8 @@
 Implementation for paper [MLP-Mixer: An all-MLP Architecture for Vision](https://arxiv.org/pdf/2105.01601.pdf)
 
-<img src="/home/qlinhta/mlp-mixer/images/architecture.PNG" width="500"/>
+![](/home/qlinhta/mlp-mixer/images/architecture.PNG)
 
-### Set up your dataset.
+### Set up dataset.
 
 Create 2 folders `train` and `validation` in the `data` folder (which was created already). Then `Please copy` your images with the corresponding names into these folders.
 
@@ -11,7 +11,7 @@ Create 2 folders `train` and `validation` in the `data` folder (which was create
 
 This library use `image_dataset_from_directory` API from `Tensorflow 2.0` to load images.
 
-### Train your model
+### Train model
 
 ```bash
 python train.py --epochs ${epochs} --num-classes ${num_classes}
