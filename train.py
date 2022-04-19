@@ -48,7 +48,16 @@ if __name__ == "__main__":
         batch_size=args.batch_size,
     )
 
-
+    # Load Validation images from folder
+    val_ds = tf.keras.preprocessing.image_dataset_from_directory(
+        valid_folder,
+        subset="validation",
+        seed=123,
+        image_size=(args.image_size, args.image_size),
+        shuffle=True,
+        validation_split=args.validation_split,
+        batch_size=args.batch_size,
+    )
 
     assert args.image_size * args.image_size % (
                 args.patch_size * args.patch_size) == 0, 'Make sure that image-size is divisible by patch-size'
