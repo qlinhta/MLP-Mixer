@@ -2,20 +2,6 @@
 
 Implementation for paper [MLP-Mixer: An all-MLP Architecture for Vision](https://arxiv.org/pdf/2105.01601.pdf). Give us a star if you like this repo.
 
-Run it on colab:
-
-<a href="https://colab.research.google.com/drive/1CfUq7vGV_ZHvn28qSfoOnAFqUbZe8mCR?usp=sharing"><img src="https://storage.googleapis.com/protonx-cloud-storage/colab_favicon_256px.png" width=80> </a>
-
-Author:
-- Github: bangoc123
-- Email: protonxai@gmail.com
-
-This library belongs to our project: [Papers-Videos-Code](https://docs.google.com/document/d/1bjmwsYFafizRXlZyJFazd5Jcr3tqpWSiHLvfllWRQBc/edit?usp=sharing) where we will implement AI SOTA papers and publish all source code. Additionally, videos to explain these models will be uploaded to ProtonX Youtube channels.
-
-![image](https://storage.googleapis.com/protonx-cloud-storage/Capture3.PNG)
-
-<!-- <img src=./images/architecture.png width=400> -->
-
 **[Note] You can use your data to train this model.**
 
 ### I. Set up environment
@@ -105,7 +91,7 @@ where `test_file_path` is the path of your test image.
 Example:
 
 ```bash
-python predict.py --test-file-path ./data/test/cat.2000.jpg
+python predict.py --test-file-path ./data/test/Image.jpg
 ```
 
 ### V. Feedback
