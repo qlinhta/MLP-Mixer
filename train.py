@@ -10,7 +10,6 @@ if __name__ == "__main__":
     parser = ArgumentParser()
     parser.add_argument("--logdir", default="logs")
     home_dir = os.getcwd()
-    # parser.add_argument("--weight-decay", default=1e-4, type=float)
     parser.add_argument("--train-folder", default='{}/data/train'.format(home_dir), type=str)
     parser.add_argument("--valid-folder", default='{}/data/validation'.format(home_dir), type=str)
     parser.add_argument("--model-folder", default='{}/model/mlp/'.format(home_dir), type=str)
@@ -49,16 +48,7 @@ if __name__ == "__main__":
         batch_size=args.batch_size,
     )
 
-    # Load Validation images from folder
-    val_ds = tf.keras.preprocessing.image_dataset_from_directory(
-        valid_folder,
-        subset="validation",
-        seed=123,
-        image_size=(args.image_size, args.image_size),
-        shuffle=True,
-        validation_split=args.validation_split,
-        batch_size=args.batch_size,
-    )
+
 
     assert args.image_size * args.image_size % (
                 args.patch_size * args.patch_size) == 0, 'Make sure that image-size is divisible by patch-size'
