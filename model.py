@@ -1,3 +1,16 @@
+'''
+-  `train-folder`: The folder of training images
+-  `valid-folder`: The folder of validation images
+-  `model-folder`: Where the model after training saved
+-  `num-classes`: The number of your problem classes.
+- `batch-size`: The batch size of the dataset
+- `c`: Patch Projection Dimension
+- `ds`: Token-mixing units. It was mentioned in the paper on [page 3](https://arxiv.org/pdf/2105.01601.pdf)
+- `dc`: Channel-mixing units. It was mentioned in the paper on [page 3](https://arxiv.org/pdf/2105.01601.pdf)
+- `num-of-mlp-blocks`: The number of MLP Blocks
+- `learning-rate`: The learning rate of Adam Optimizer
+'''
+
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras.layers.experimental.preprocessing import Normalization, Resizing, RandomFlip, RandomRotation, \
