@@ -13,12 +13,12 @@
 
 import numpy as np
 import tensorflow as tf
+from keras import layers
+from tensorflow.keras.layers import Embedding
+from tensorflow.keras.layers import Embedding, Input, LayerNormalization, Dense, GlobalAveragePooling1D, Dropout
 from tensorflow.keras.layers.experimental.preprocessing import Normalization, Resizing, RandomFlip, RandomRotation, \
     RandomZoom
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Embedding
-from keras import layers
-from tensorflow.keras.layers import Embedding, Input, LayerNormalization, Dense, GlobalAveragePooling1D, Dropout
 
 
 class Patches(layers.Layer):
