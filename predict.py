@@ -1,8 +1,8 @@
-import tensorflow as tf
-from model import MLPMixer
-from argparse import ArgumentParser
 import os
+from argparse import ArgumentParser
+
 import numpy as np
+import tensorflow as tf
 
 if __name__ == "__main__":
     home_dir = os.getcwd()
