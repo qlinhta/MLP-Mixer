@@ -1,8 +1,10 @@
+import logging
 import os
 from argparse import ArgumentParser
+
 import tensorflow as tf
+
 from model import MLPMixer
-import logging
 
 logging.basicConfig(level=logging.DEBUG)
 
@@ -60,7 +62,7 @@ if __name__ == "__main__":
     )
 
     assert args.image_size * args.image_size % (
-                args.patch_size * args.patch_size) == 0, 'Make sure that image-size is divisible by patch-size'
+            args.patch_size * args.patch_size) == 0, 'Make sure that image-size is divisible by patch-size'
     assert args.image_channels == 3, 'Unfortunately, model accepts jpg images with 3 channels so far'
 
     S = (args.image_size * args.image_size) // (args.patch_size * args.patch_size)
