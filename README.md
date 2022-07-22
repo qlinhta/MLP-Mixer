@@ -1,5 +1,6 @@
 Implementation for paper [MLP-Mixer: An all-MLP Architecture for Vision](https://arxiv.org/pdf/2105.01601.pdf)
 
+![Architecture](https://github.com/qlinhta/MLP-Mixer-Implementation/blob/main/images/architecture-inverse.png?raw=true "Architecture")
 
 ### Set up dataset.
 
